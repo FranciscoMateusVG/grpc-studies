@@ -1,0 +1,23 @@
+{
+  "name": "grpc-studies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pb:gen": "./scripts/gen.sh greet sum",
+    "greet:server": "node greet/server",
+    "greet:client": "node greet/client",
+    "sum:server": "node sum/server",
+    "sum:client": "node sum/client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.7.3",
+    "google-protobuf": "^3.21.2"
+  },
+  "devDependencies": {
+    "grpc-tools": "^1.11.3"
+  }
+}
